@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:orientation="vertical"
+        app:cardBackgroundColor="@color/cardview_dark_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_8"
+            android:layout_marginTop="@dimen/margin_8"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edtModifyJobName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/str_hint_name_work"
+                    android:inputType="text"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/hint"
+                    android:textSize="@dimen/text_sheet_size_small_14"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edtModifyJobAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/str_hint_address_work"
+                    android:inputType="text"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/hint"
+                    android:textSize="@dimen/text_sheet_size_small_14"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/txtTitleIntroduceJob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_4"
+                android:layout_marginStart="@dimen/margin_4"
+                android:text="@string/str_introduce_work"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/text_sheet_size_large"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="@dimen/margin_8"
+                android:background="@drawable/shape_divider"
+                android:orientation="vertical"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtTitleJobWordGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_4"
+                    android:layout_marginStart="@dimen/margin_4"
+                    android:text="صنعت:"
+                    android:textColor="@color/hint"
+                    android:textSize="@dimen/text_sheet_size_small_14"/>
+
+                <TextView
+                    android:id="@+id/txtModifyJobWorkGroup"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_4"
+                    android:layout_marginStart="@dimen/margin_4"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_sheet_size_small_14"/>
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edtModifyJobTypeOfJob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_4"
+                    android:hint="نوع همکاری: "
+                    android:inputType="text"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/hint"
+                    android:textSize="@dimen/text_sheet_size_small_14"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edtModifyJobHoursOfWork"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="تعداد روز و ساعت کاری: "
+                    android:inputType="text"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/hint"
+                    android:textSize="@dimen/text_sheet_size_small_14"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edtModifyJobBenefit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="تسهیلات و مزایا: "
+                    android:inputType="text"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/hint"
+                    android:textSize="@dimen/text_sheet_size_small_14"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edtModifyJobTravelOfWork"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="سفرهای کاری: "
+                    android:inputType="text"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/hint"
+                    android:textSize="@dimen/text_sheet_size_small_14"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

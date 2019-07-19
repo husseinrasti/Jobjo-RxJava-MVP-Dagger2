@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtTitleIntroduceJob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_8"
+                android:layout_marginStart="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_6"
+                android:text="@string/str_introduce_work"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/text_sheet_size_large"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/shape_divider"
+                android:orientation="vertical"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_8"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtSheetJobWorkGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="صنعت: "
+                    android:textColor="#737373"
+                    android:textSize="@dimen/text_sheet_size_small_14"/>
+
+                <TextView
+                    android:id="@+id/txtSheetTypeOfJob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_6"
+                    android:text="نوع همکاری: "
+                    android:textColor="#737373"
+                    android:textSize="@dimen/text_sheet_size_small_14"/>
+
+                <TextView
+                    android:id="@+id/txtSheetHoursOfWork"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_6"
+                    android:text="تعداد روز و ساعت کاری: "
+                    android:textColor="#737373"
+                    android:textSize="@dimen/text_sheet_size_small_14"/>
+
+                <TextView
+                    android:id="@+id/txtSheetBenefit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_6"
+                    android:text="تسهیلات و مزایا: "
+                    android:textColor="#737373"
+                    android:textSize="@dimen/text_sheet_size_small_14"/>
+
+                <TextView
+                    android:id="@+id/txtSheetTravelOfWork"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_4"
+                    android:layout_marginTop="@dimen/margin_6"
+                    android:text="سفرهای کاری: "
+                    android:textColor="#737373"
+                    android:textSize="@dimen/text_sheet_size_small_14"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@id/txtTitleSkillJob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_8"
+                android:layout_marginStart="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_6"
+                android:text="@string/str_title_skill_job"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/text_sheet_size_large"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/shape_divider"
+                android:orientation="vertical"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_8"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtSheetAge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_6"
+                    android:text="@string/str_title_age"
+                    android:textColor="#737373"
+                    android:textSize="@dimen/text_sheet_size_small_14"/>
+
+                <TextView
+                    android:id="@+id/txtSheetGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_6"
+                    android:text="@string/str_title_gender"
+                    android:textColor="#737373"
+                    android:textSize="@dimen/text_sheet_size_small_14"/>
+
+                <TextView
+                    android:id="@+id/txtSheetMilitaryService"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_6"
+                    android:text="@string/str_military_service"
+                    android:textColor="#737373"
+                    android:textSize="@dimen/text_sheet_size_small_14"/>
+
+                <TextView
+                    android:id="@+id/txtSheetWorkExperience"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_6"
+                    android:text="@string/str_work_experience"
+                    android:textColor="#737373"
+                    android:textSize="@dimen/text_sheet_size_small_14"/>
+
+                <TextView
+                    android:id="@+id/txtSheetEducation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_6"
+                    android:text="@string/str_tilte_edu"
+                    android:textColor="#737373"
+                    android:textSize="@dimen/text_sheet_size_small_14"/>
+
+                <TextView
+                    android:id="@+id/txtTitleLanguage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_6"
+                    android:text="@string/str_hint_language"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/text_sheet_size_small_14"/>
+
+                <TextView
+                    android:id="@+id/txtSheetLanguage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_6"
+                    android:textColor="#737373"
+                    android:textSize="@dimen/text_sheet_size_small_14"/>
+
+                <TextView
+                    android:id="@+id/txtTitleSoftware"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_6"
+                    android:text="@string/str_hint_software"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/text_sheet_size_small_14"/>
+
+                <TextView
+                    android:id="@+id/txtSheetSoftware"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_6"
+                    android:textColor="#737373"
+                    android:textSize="@dimen/text_sheet_size_small_14"/>
+
+                <TextView
+                    android:id="@+id/txtTitleSkill"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_6"
+                    android:text="@string/str_hint_skill"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/text_sheet_size_small_14"/>
+
+                <TextView
+                    android:id="@+id/txtSheetProfessionalKnowledge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_6"
+                    android:layout_marginTop="@dimen/margin_6"
+                    android:textColor="#737373"
+                    android:textSize="@dimen/text_sheet_size_small_14"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin_8"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtTitleDescJob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/str_title_desc_job"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/text_sheet_size_large"/>
+
+
+            <LinearLayout
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/shape_divider"
+                android:orientation="vertical"/>
+
+            <TextView
+                android:id="@+id/txtSheetJobDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_6"
+                android:textColor="#737373"
+                android:textSize="@dimen/text_sheet_size_small_14"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

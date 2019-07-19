@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <dimen name="activity_horizontal_margin">5dp</dimen>
+    <dimen name="text_margin">2dp</dimen>
+    <dimen name="margin_4">4dp</dimen>
+    <dimen name="margin_6">6dp</dimen>
+    <dimen name="margin_8">8dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="drawer_header_height">150dp</dimen>
+    <dimen name="size_pic_job">150dp</dimen>
+    <dimen name="size_card">200dp</dimen>
+    <dimen name="size_logo">128dp</dimen>
+    <dimen name="size_pic_cat">90dp</dimen>
+    <dimen name="size_pic">72dp</dimen>
+    <dimen name="text_sheet_size_small_12">12sp</dimen>
+    <dimen name="text_sheet_size_small_14">14sp</dimen>
+    <dimen name="text_sheet_size_small">16sp</dimen>
+    <dimen name="text_sheet_size_medium">18sp</dimen>
+    <dimen name="text_sheet_size_large">20sp</dimen>
+    <dimen name="text_sheet_size_xlarge">22sp</dimen>
+    <dimen name="text_sheet_size_xxlarge">24sp</dimen>
+    <dimen name="text_sheet_size_small_10">10sp</dimen>
+
+    <dimen name="design_bottom_navigation_text_size" tools:override="true">12sp</dimen>
+    <dimen name="design_bottom_navigation_active_text_size" tools:override="true">12sp</dimen>
+</resources>

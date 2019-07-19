@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_6"
+    android:textDirection="rtl">
+
+    <LinearLayout
+        android:id="@+id/itemRootWorkerAdapter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_4">
+
+        <ir.hosseinrasti.app.jobjo.utils.CircleImageView
+            android:id="@+id/itemUserPic"
+            android:scaleType="centerCrop"
+            android:layout_width="@dimen/size_pic"
+            android:layout_height="@dimen/size_pic"
+            android:src="@mipmap/ic_launcher_round"/>
+
+        <TextView
+            android:id="@+id/itemFullname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_sheet_size_small_14"/>
+
+        <TextView
+            android:id="@+id/itemEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_sheet_size_small_12"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

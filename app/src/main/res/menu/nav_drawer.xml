@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="حساب">
+        <group android:checkableBehavior="single">
+            <menu>
+                <item
+                    android:id="@+id/itemLogout"
+                    android:icon="@drawable/ic_logout"
+                    android:title="خروج"/>
+            </menu>
+        </group>
+    </item>
+
+    <item
+        android:id="@+id/itemSearch"
+        android:icon="@drawable/ic_search"
+        android:title="جستجو"/>
+    <item
+        android:id="@+id/itemIntroducedUsers"
+        android:icon="@drawable/ic_users"
+        android:title="کارجوی پیشنهاد شده"/>
+    <item
+        android:id="@+id/itemJobApply"
+        android:icon="@drawable/ic_follower"
+        android:title="کارهای درخواست شده"/>
+
+    <item
+        android:id="@+id/itemMyJobList"
+        android:icon="@drawable/ic_ad_job"
+        android:title="@string/title_job_ad2"/>
+
+    <item
+        android:id="@+id/itemAbout"
+        android:icon="@drawable/ic_about"
+        android:title="درباره ما"/>
+</menu>

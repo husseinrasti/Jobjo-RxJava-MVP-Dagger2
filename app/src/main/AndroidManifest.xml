@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="ir.hosseinrasti.app.jobjo"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".root.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.activites.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activites.BaseActivity"/>
+        <activity android:name=".ui.activites.startup.StartupActivity"/>
+        <activity android:name=".ui.user.login.LoginActivity"/>
+        <activity android:name=".ui.user.signup.SignupActivity"/>
+        <activity android:name=".ui.activites.modify.job.ModifyJobActivity"/>
+        <activity android:name=".ui.activites.job.JobSeekersActivity"/>
+        <activity android:name=".ui.activites.modify.profile.ModifyProfileActivity"/>
+        <activity android:name=".ui.activites.startup.fragments.interview.ChatActivity"/>
+        <activity android:name=".ui.user.intruduce.UsersIntroducedActivity"/>
+        <activity android:name=".ui.activites.job.JobListRequestedActivity"/>
+        <activity android:name=".ui.activites.job.JobDetailsActivity"/>
+        <activity android:name=".ui.user.profile.ProfileActivity"/>
+        <activity android:name=".ui.activites.job.JobListByCategoryActivity"/>
+        <activity android:name=".ui.user.profileOthers.ProfileOthersActivity"/>
+        <activity android:name=".ui.user.users.UsersActivity"/>
+        <activity android:name=".ui.activites.comment.CommentActivity"/>
+    </application>
+
+</manifest>
